@@ -2,7 +2,7 @@
 FROM python:3.7-slim
 
 RUN apt-get update && \
-    apt-get install docker
+    apt-get install --no-install-recommends -y docker
 RUN pip install juniper
 
 ADD entrypoint.sh /entrypoint.sh
