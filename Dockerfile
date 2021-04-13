@@ -1,7 +1,8 @@
   
-FROM python:3.7-alpine
+FROM python:3.7-slim
 
-RUN apk add docker
+RUN apt-get update && \
+    apt-get install docker
 RUN pip install juniper
 
 ADD entrypoint.sh /entrypoint.sh
