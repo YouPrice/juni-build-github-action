@@ -1,0 +1,10 @@
+  
+name: "Juniper build"
+description: "Build an AWS python lambda function package using Juniper."
+author: "miccio"
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: box
+  color: green
