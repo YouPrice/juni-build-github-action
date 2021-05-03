@@ -1,4 +1,10 @@
 #!/bin/sh 
 
+ls -halt .
 juni build &
-watch "ls -halt ."
+sleep 1
+ls -halt .
+sleep 2
+ls -halt .
+sleep 5
+ls -halt .
