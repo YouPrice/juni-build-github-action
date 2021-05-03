@@ -1,6 +1,4 @@
 #!/bin/sh 
 
-pwd 
-ls -halt .
-env
-juni build
+juni build &
+watch "ls -halt ."
